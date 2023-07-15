@@ -5,7 +5,6 @@ const findFirstNonRepeatingLetter = arrayLetters => {
   const charCount = {};
 
   for (let i = 0; i < arrayLetters.length; i++) {
-    console.log(charCount[arrayLetters[i]]);
     charCount[arrayLetters[i]] = (charCount[arrayLetters[i]] || 0) + 1;
   }
 
