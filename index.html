@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ua">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Test</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <a href="https://education.portaone.com/" rel="home"
+          ><picture class="header__logo"
+            ><source
+              media="(min-width: 1050px)"
+              srcset="
+                https://education.portaone.com/wp-content/uploads/2021/11/PortaOne-color-64a.png,
+                https://education.portaone.com/wp-content/uploads/2021/11/PortaOne-color-64a.png 2x
+              " />
+            <source
+              srcset="
+                https://education.portaone.com/wp-content/uploads/2021/11/PortaOne-color-64a.png,
+                https://education.portaone.com/wp-content/uploads/2021/11/PortaOne-color-64a.png 2x
+              " />
+            <img
+              src="https://education.portaone.com/wp-content/uploads/2021/11/PortaOne-color-64a.png"
+              alt="PortaOne Education Center" /></picture
+        ></a>
+        <nav>
+          <ul class="navigation">
+            <li class="navigation__item">
+              <a class="navigation__link" href="https://education.portaone.com/"
+                >Головна</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a
+                class="navigation__link"
+                href="https://education.portaone.com/about/"
+                >Про нас</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a
+                class="navigation__link"
+                href="https://education.portaone.com/contacts/"
+                >Контакти</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <!-- <ul class="contacts">
+          <li class="contacts__item">
+            <a class="contacts__link" href="mailto:info@devstudio.com">
+              <svg class="contacts__icon" width="16" height="12">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+              stetsyuk.p.s@gmail.com
+            </a>
+          </li>
+          <li class="contacts__item">
+            <a class="contacts__link" href="tel:+380961111111">
+              <svg class="contacts__icon" width="10" height="16">
+                <use href="./images/icons.svg#icon-tell"></use>
+              </svg>
+              +38 098 900 73 28
+            </a>
+          </li>
+        </ul> -->
+      </div>
+    </header>
+    <main class="main">
+      <section class="hero">
+        <div class="container hero__container">
+          <h2 class="hero__title">Навчальний центр PortaOne</h2>
+          <p class="hero__text">
+            Приєднуйтесь, читайте, коментуйте – спілкуємось разом!
+          </p>
+          <p>
+            <a href="https://education.portaone.com/about" class="hero__link"
+              >Дізнатися більше</a
+            >
+          </p>
+        </div>
+      </section>
+      <section class="test">
+        <div class="container test__container">
+          <h2 class="test_title">Вирішення тестового завдання</h2>
+          <p class="test__task">
+            <span class="test__span">Завдання: </span> знайти першу унікальну
+            літеру, серед усіх перших унікальних літерів слова, уведеного
+            тексту.
+          </p>
+          <p class="test_note">
+            Примітка: текст повинен бути уведений латинськими літерами
+          </p>
+          <textarea
+            class="test__input"
+            id="name-input"
+            placeholder="Please write the text"
+            rows="6"
+          ></textarea>
+          <p class="test_answer">
+            Ваш унікальний символ згідно завдання:
+            <span id="name-output" class="test__result">символ</span>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__container">
+        <h3 class="footter__title">Контактні дані для зворотнього зв'язку</h3>
+        <address class="address">
+          <ul class="address__list">
+            <li class="address__item">
+              <a
+                class="address__link-map"
+                href="https://goo.gl/maps/V8sVkg5Z3meuQnrHA"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Німечинна, м. Штутгардю
+              </a>
+            </li>
+            <li class="address__item">
+              <a
+                class="address__link-contacts"
+                href="mailto:stetsyuk.p.s@gmail.com"
+                >stetsyuk.p.s@gmail.com</a
+              >
+            </li>
+            <li class="address__item">
+              <a class="address__link-contacts" href="tel:+380636750602"
+                >+38 063 67 50 602</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
+    </footer>
+
+    <script src="js/tasks.js" type="module"></script>
+  </body>
+</html>
